@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body{
+        background-color: #ededed;
+    }
+
+    main{
+        padding-inline: 30%;
+    }
+
+    .principal{
+        /* Configurando o display */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        /* dando um espacamento acima */
+        margin-top: 25px;
+
+        /* Criando o background */
+
+        background-color: #ffffff;
+        border: 1px solid #000000;
+        border-radius: 10px;
+        padding: 20px;
+    }
+
+    .foto{
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        border: 5px solid #00BFFF;
+
+        margin: 5px;
+    }
+
+    .name{
+        color: #00BFFF;
+        padding-bottom: 5px;
+    }
+
+    .texto{
+        padding-top: 10px;
+        text-align: center;
+        width: 600px;
+    }
+
+    .linguagens{
+        padding-top: 15px;
+        
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+        width: 70%;
+    }
+    </style>
+
+    <title>Perfil Pessoal</title>
+    
+</head>
+<body>
+    <main>
+        <div class="principal">
+            <img src="foto_de_perfil.jpg" alt="Foto do Perfil de Leonardo" class="foto">
+            <h1 class="name">Leonardo Dionizio</h1>
+            <p style="color: #6b6b6b;">Matrícula: 202403680955</p>
+
+            <p class="texto">
+                Olá mundo!!! Me chamo Leonardo, estou cursando Ciência da Computação. Eu sempre
+                gostei de solucionar problemas pensando nisso não achei outro curso que não
+                algum voltado a computação e tecnologia. Pensando nisso resolvi entrar no
+                curso de Ciência da Computação, para que consiga os conhecimentos necessários
+                para ingressar na carreira de desenvolvedor e que possa solucionar os problemas
+                que me apareçam. Claro, o curso não vai me ensinar tudo então irei buscar cursos
+                que me fortaleçam ainda mais neste caminho. Abaixo está algumas linguagens de
+                programação e de marcação de texto que gostei (até agora 😁):
+            </p>
+
+            <div class="linguagens">
+                <img src="https://cdn-icons-png.flaticon.com/512/5968/5968350.png" alt="Python" width="50px">
+                <img src="https://cdn-icons-png.flaticon.com/512/174/174854.png" alt="html" width="50px">
+                <img src="https://cdn-icons-png.flaticon.com/512/5968/5968242.png" alt="css" width="50px">
+                <img src="https://static.vecteezy.com/system/resources/previews/027/127/463/non_2x/javascript-logo-javascript-icon-transparent-free-png.png" alt="JavaScript" width="50px">
+            </div>
+        </div>
+    </main>
+</body>
+</html>

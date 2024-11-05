@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        * {
+            /* Para que todas as medidas de todos os usuários começem de um ponto em comum */
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            background-color: #dcdcdc;
+        }
+
+        main{
+            padding: 20px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .titulo{
+            text-align: center;
+
+            padding: 10px;
+        }
+
+        hr{
+            height: 5px;
+            background-color: black;
+            width: 50%;
+        }
+
+        .tabela{
+            display: flex;
+            justify-content: center;
+
+            padding-top: 15px;
+
+            width: 40%;
+        }
+
+        .titulo_tabela{
+            background-color: #8422c4;
+            color: white;
+            font-weight: bold;
+
+            padding: 10px;
+
+            border-radius: 8px;
+
+            border: 2px solid black;
+
+            text-align: center;
+        }
+
+        .celula{
+            background-color: #e9c7ff;
+
+            padding: 5px;
+
+            border: 2px solid black;
+
+            border-radius: 8px;
+
+            text-align: center;
+        }
+    </style>
+
+    <title>Tabela de produtos</title>
+</head>
+<body>
+    <main>
+        <h1 class="titulo">Tabela de Preços</h1>
+
+        <hr>
+
+        <div class="tabela">
+            <table>
+                <tr>
+                    <td class="titulo_tabela">Nome</td>
+                    <td class="titulo_tabela">Preço</td>
+                    <td class="titulo_tabela">Categoria</td>
+                    <td class="titulo_tabela">Descrição</td>
+                </tr>
+                <tr class="celula">
+                    <td class="celula">Tênis Running Pro</td>
+                    <td class="celula">399,99</td>
+                    <td class="celula">Esporte</td>
+                    <td class="celula">Tênis leve e confortável para seus treinos.</td>
+                </tr>
+                <tr class="celula">
+                    <td class="celula">Smartphone Galaxy S24</td>
+                    <td class="celula">6.999,00</td>
+                    <td class="celula">Eletrônicos</td>
+                    <td class="celula">Tecnologia de ponta para o dia a dia.</td>
+                </tr>
+                <tr class="celula">
+                    <td class="celula">Kit de Maquiagem Essencial</td>
+                    <td class="celula">199,00</td>
+                    <td class="celula">Beleza</td>
+                    <td class="celula">Tudo o que você precisa para arrasar.</td>
+                </tr>
+                <tr class="celula">
+                    <td class="celula">Livro A Arte da Guerra</td>
+                    <td class="celula">39,90</td>
+                    <td class="celula">Livros</td>
+                    <td class="celula">Clássico da estratégia militar.</td>
+                </tr>
+            </table>
+        </div>
+    </main>
+</body>
+</html>
