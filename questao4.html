@@ -123,36 +123,49 @@
             const cor = document.getElementById('resultado');
             let nivel;
 
+            // Verificação de possíveis erros
+            if(!peso || !altura){
+                alert("Preencha todos os campos!");
+                return;
+            }
+
+            // Cálculo do IMC
             let calc = peso / (altura * altura);
             let imc = parseFloat(calc.toFixed(2));
 
+            // Verifica qual o nível do IMC
             switch (true) {
                 case imc < 18.5:
-                cor.style.background = '#fff244'; // Underweight - Yellow
+                cor.style.background = '#fff244';
                 nivel = "Abaixo do peso";
                 break;
+
                 case imc >= 18.5 && imc < 24.9:
-                cor.style.background = '#16ad00'; // Normal weight - Green
+                cor.style.background = '#16ad00';
                 nivel = "Peso Ideal";
                 break;
+
                 case imc >= 24.9 && imc < 29.9:
-                cor.style.background = '#faba68'; // Overweight - Orange
+                cor.style.background = '#faba68';
                 nivel = "Sobrepeso";
                 break;
+
                 case imc >= 29.9 && imc < 34.9:
-                cor.style.background = '#ff7100'; // Obesity Class I - Orange-Red
+                cor.style.background = '#ff7100';
                 nivel = "Obesidade - Grau 1";
                 break;
+
                 case imc >= 34.9 && imc < 39.9:
-                cor.style.background = '#ff5555'; // Obesity Class II - Red
+                cor.style.background = '#ff5555';
                 nivel = "Obesidade Severa - Grau 2";
                 break;
+
                 default:
-                cor.style.background = '#ff0000'; // Obesity Class III or invalid IMC - Dark Red
+                cor.style.background = '#ff0000';
                 nivel = "Obesidade Mórbida - Grau 3"
             }
 
-            enviar.textContent = `Seu IMC é ${imc} - ${nivel}`;
+            enviar.textContent = `Seu IMC é ${imc} - ${nivel}`; // Imprime na tela
         }
     </script>
 </body>
