@@ -132,7 +132,7 @@
             const mensagem = document.getElementById('mensagem').value.trim(); // Guarda a mensagem
             const confirmacao = document.getElementById('confi'); // Cria uma variável para que fique mais fácil imprimir na tela
 
-            let regex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+            let regex = /^[a-z A-Z 0-9._-]+@[a-z A-Z 0-9.-]+\.[a-z A-Z]{2,6}$/;
 
             if (!nome && !email && !mensagem) {
                 alert("Preencha todos os campos!");
